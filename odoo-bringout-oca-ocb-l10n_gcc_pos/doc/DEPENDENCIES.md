@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [point_of_sale](https://github.com/bringout/oca-ocb-sale/tree/3e269fa48ad4d81d3305977a3a962b1dc0f75ef3/odoo-bringout-oca-ocb-point_of_sale)
-- [l10n_gcc_invoice](https://github.com/bringout/oca-ocb-l10n_asia-pacific/tree/54d5192babb41f771ce8a9a9f0cd4295144e4555/odoo-bringout-oca-ocb-l10n_gcc_invoice)
+- [point_of_sale](https://github.com/bringout/oca-ocb-sale/tree/b79cef0fc454482466e93989011360a14a738822/odoo-bringout-oca-ocb-point_of_sale)
+- [l10n_gcc_invoice](https://github.com/bringout/oca-ocb-l10n_asia-pacific/tree/57f88a085710a7cfbeb40dad1e14eca00531a49d/odoo-bringout-oca-ocb-l10n_gcc_invoice)
