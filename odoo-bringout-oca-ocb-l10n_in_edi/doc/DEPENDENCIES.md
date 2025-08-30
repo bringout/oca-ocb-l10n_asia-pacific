@@ -2,6 +2,6 @@
 
 This addon depends on:
 
-- [account_edi](../../../../../oca-ocb-accounting/odoo-bringout-oca-ocb-account_edi)
-- [l10n_in](../../../../odoo-bringout-oca-ocb-l10n_in)
-- [iap](../../../../../oca-ocb-technical/odoo-bringout-oca-ocb-iap)
+- [account_edi](https://github.com/bringout/oca-ocb-accounting)
+- [l10n_in](https://github.com/bringout/oca-ocb-l10n_asia-pacific)
+- [iap](https://github.com/bringout/oca-ocb-technical)

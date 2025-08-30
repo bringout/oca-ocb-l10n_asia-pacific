@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [l10n_din5008](../../../../odoo-bringout-oca-ocb-l10n_din5008)
-- [sale](../../../../../oca-ocb-sale/odoo-bringout-oca-ocb-sale)
+- [l10n_din5008](https://github.com/bringout/oca-ocb-l10n_asia-pacific)
+- [sale](https://github.com/bringout/oca-ocb-sale)
