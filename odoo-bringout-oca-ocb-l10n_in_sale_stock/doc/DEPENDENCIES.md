@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [l10n_in_sale](https://github.com/bringout/oca-ocb-l10n_asia-pacific/tree/001f2cde0a10b001062384af86ae9c9c2e24c4f7/odoo-bringout-oca-ocb-l10n_in_sale)
-- [l10n_in_stock](https://github.com/bringout/oca-ocb-l10n_asia-pacific/tree/001f2cde0a10b001062384af86ae9c9c2e24c4f7/odoo-bringout-oca-ocb-l10n_in_stock)
+- [l10n_in_sale](https://github.com/bringout/oca-ocb-l10n_asia-pacific/tree/54d5192babb41f771ce8a9a9f0cd4295144e4555/odoo-bringout-oca-ocb-l10n_in_sale)
+- [l10n_in_stock](https://github.com/bringout/oca-ocb-l10n_asia-pacific/tree/54d5192babb41f771ce8a9a9f0cd4295144e4555/odoo-bringout-oca-ocb-l10n_in_stock)
