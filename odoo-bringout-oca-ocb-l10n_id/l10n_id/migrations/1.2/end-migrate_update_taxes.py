@@ -5,39 +5,36 @@ from odoo import api, SUPERUSER_ID
 def migrate(cr, version):
     env = api.Environment(cr, SUPERUSER_ID, {})
 
-    # Tax groups to create in format of [(xml_id, name)]
-    tax_group_info = [
-        ("l10n_id_tax_group_non_luxury_goods", "Non-luxury Good Taxes"),
-        ("l10n_id_tax_group_0", "Zero-rated Taxes"),
-        ("l10n_id_tax_group_exempt", "Tax Exempted"),
-    ]
+    # Load the new tax groups if it doesn't exist yet
+    ChartTemplate = env["account.chart.template"]
+    companies = env['res.company'].search([('chart_template', '=', 'id')], order="parent_path")
 
-    for xmlid, name in tax_group_info:
-        if not env.ref(f"l10n_id.{xmlid}", raise_if_not_found=False):
-            env['ir.model.data'].create({
-                "name": xmlid,
-                "module": "l10n_id",
-                "model": "account.tax.group",
-                "res_id": env['account.tax.group'].create({'name': name, 'country_id': env.ref('base.id').id}).id,
-                'noupdate': True
-            })
+    new_tax_groups = ["l10n_id_tax_group_non_luxury_goods", "l10n_id_tax_group_0", "l10n_id_tax_group_exempt"]
 
-    # For all taxes linked to the tax_ST1 and tax_PT1, set the tax group to non-luxury goods
-    # if no changes to amount and tax group yet
-    tax_group_id = env.ref("l10n_id.l10n_id_tax_group_non_luxury_goods")
-    default_group = env['account.tax']._default_tax_group()
-    id_chart = env.ref("l10n_id.l10n_id_chart", raise_if_not_found=False)
+    tax_group_data = {
+        xmlid: data
+        for xmlid, data in ChartTemplate._get_account_tax_group('id').items()
+        if xmlid in new_tax_groups
+    }
 
-    if not id_chart:
-        return
-
-    companies = env['res.company'].search([('chart_template_id', 'child_of', id_chart.id)])
+    # For taxes: tax_ST1 and tax_PT1 which are non-luxury tax, if the amount and tax group
+    # has not been changed yet by user, we update the tax group and description
     for company in companies:
-        tax_xml_ids = [
-            f"l10n_id.{company.id}_tax_ST1",
-            f"l10n_id.{company.id}_tax_PT1",
-        ]
-        for tax_xml_id in tax_xml_ids:
-            tax = env.ref(tax_xml_id, raise_if_not_found=False)
-            if tax and tax.amount == 11.0 and tax.tax_group_id == default_group:
-                tax.update({"tax_group_id": tax_group_id.id, "description": "12%"})
+        ChartTemplate.with_company(company)._load_data({
+            "account.tax.group": tax_group_data,
+        })
+        tax_ST1 = ChartTemplate.with_company(company).ref("tax_ST1", raise_if_not_found=False)
+        tax_PT1 = ChartTemplate.with_company(company).ref("tax_PT1", raise_if_not_found=False)
+
+        old_group = ChartTemplate.with_company(company).ref("default_tax_group", raise_if_not_found=False)
+        new_group = ChartTemplate.with_company(company).ref("l10n_id_tax_group_non_luxury_goods")
+
+        if not old_group:
+            continue
+
+        for tax in [tax_ST1, tax_PT1]:
+            if tax and tax.amount == 11.0 and tax.tax_group_id == old_group:
+                tax.write({
+                    "tax_group_id": new_group.id,
+                    "description": "12%",
+                })

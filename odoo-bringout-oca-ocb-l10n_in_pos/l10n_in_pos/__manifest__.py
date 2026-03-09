@@ -3,7 +3,6 @@
 
 {
     'name': 'Indian - Point of Sale',
-    'icon': '/l10n_in/static/description/icon.png',
     'version': '1.0',
     'description': """GST Point of Sale""",
     'category': 'Accounting/Localizations/Point of Sale',
@@ -11,15 +10,25 @@
         'l10n_in',
         'point_of_sale'
     ],
+    'data': [
+        'views/pos_order_line_views.xml',
+        'views/product_view.xml',
+        'views/res_config_settings_views.xml',
+        'data/pos_bill_data.xml',
+    ],
     'demo': [
         'data/product_demo.xml',
     ],
     'auto_install': True,
     'assets': {
-        'point_of_sale.assets': [
-            'l10n_in_pos/static/src/js/**/*',
-            'l10n_in_pos/static/src/xml/**/*',
+        'point_of_sale._assets_pos': [
+            'l10n_in/static/src/helpers/hsn_summary.js',
+            'l10n_in_pos/static/src/**/*',
+        ],
+        'web.assets_tests': [
+            'l10n_in_pos/static/tests/tours/**/*',
         ],
     },
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 }

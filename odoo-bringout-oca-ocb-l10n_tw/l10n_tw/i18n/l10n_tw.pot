@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0+e\n"
+"Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-26 10:11+0000\n"
-"PO-Revision-Date: 2022-04-26 10:11+0000\n"
+"POT-Creation-Date: 2026-01-30 19:11+0000\n"
+"PO-Revision-Date: 2026-01-30 19:11+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,914 +16,53 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_217100
-#: model:account.account,name:l10n_tw.2_tw_217100
-#: model:account.account.template,name:l10n_tw.tw_217100
-msgid "Accounts payable"
+#: model:account.report,name:l10n_tw.l10n_tw_tax_report_401
+msgid "401 Tax Report"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_119100
-#: model:account.account,name:l10n_tw.2_tw_119100
-#: model:account.account.template,name:l10n_tw.tw_119100
-msgid "Accounts receivable"
+#: model:account.report,name:l10n_tw.l10n_tw_tax_report_403
+msgid "403 Tax Report"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_119150
-#: model:account.account,name:l10n_tw.2_tw_119150
-#: model:account.account.template,name:l10n_tw.tw_119150
-msgid "Accounts receivable (PoS)"
+#: model:account.report,name:l10n_tw.l10n_tw_tax_report_404
+msgid "404 Tax Report"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_155200
-#: model:account.account,name:l10n_tw.2_tw_155200
-#: model:account.account.template,name:l10n_tw.tw_155200
-msgid "Accumulated amortization, other intangible assets"
+#: model:ir.model,name:l10n_tw.model_account_chart_template
+msgid "Account Chart Template"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_141300
-#: model:account.account,name:l10n_tw.2_tw_141300
-#: model:account.account.template,name:l10n_tw.tw_141300
-msgid "Accumulated depreciation, buildings and structures"
+#: model:account.report.column,name:l10n_tw.l10n_tw_tax_report_401_balance
+#: model:account.report.column,name:l10n_tw.l10n_tw_tax_report_403_balance
+#: model:account.report.column,name:l10n_tw.l10n_tw_tax_report_404_balance
+msgid "Balance"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_144200
-#: model:account.account,name:l10n_tw.2_tw_144200
-#: model:account.account.template,name:l10n_tw.tw_144200
-msgid "Accumulated depreciation, leased assets"
+#. odoo-python
+#: code:addons/l10n_tw/models/template_tw.py:0
+msgid "Cash"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_142200
-#: model:account.account,name:l10n_tw.2_tw_142200
-#: model:account.account.template,name:l10n_tw.tw_142200
-msgid "Accumulated depreciation, machinery and equipment"
+#: model:ir.model.fields,field_description:l10n_tw.field_account_chart_template__display_name
+msgid "Display Name"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_143200
-#: model:account.account,name:l10n_tw.2_tw_143200
-#: model:account.account.template,name:l10n_tw.tw_143200
-msgid "Accumulated depreciation, office equipment"
+#: model:ir.model.fields,field_description:l10n_tw.field_account_chart_template__id
+msgid "ID"
 msgstr ""
 
 #. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_335100
-#: model:account.account,name:l10n_tw.2_tw_335100
-#: model:account.account.template,name:l10n_tw.tw_335100
-msgid "Accumulated profit and loss"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_222100
-#: model:account.account,name:l10n_tw.2_tw_222100
-#: model:account.account.template,name:l10n_tw.tw_222100
-msgid "Advance sales receipts"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_611800
-#: model:account.account,name:l10n_tw.2_tw_611800
-#: model:account.account.template,name:l10n_tw.tw_611800
-msgid "Advertisement expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_211200
-#: model:account.account,name:l10n_tw.2_tw_211200
-#: model:account.account.template,name:l10n_tw.tw_211200
-msgid "Bank loan"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_141100
-#: model:account.account,name:l10n_tw.2_tw_141100
-#: model:account.account.template,name:l10n_tw.tw_141100
-msgid "Buildings and structures, cost"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_126800
-#: model:account.account,name:l10n_tw.2_tw_126800
-#: model:account.account.template,name:l10n_tw.tw_126800
-msgid "Business tax paid (or Input VAT)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_219400
-#: model:account.account,name:l10n_tw.2_tw_219400
-#: model:account.account.template,name:l10n_tw.tw_219400
-msgid "Business tax payable"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_220400
-#: model:account.account,name:l10n_tw.2_tw_220400
-#: model:account.account.template,name:l10n_tw.tw_220400
-msgid "Business tax received (or Output VAT)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_321100
-#: model:account.account,name:l10n_tw.2_tw_321100
-#: model:account.account.template,name:l10n_tw.tw_321100
-msgid ""
-"Capital surplus, additional paid-in capital arising from ordinary share"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_718500
-#: model:account.account,name:l10n_tw.2_tw_718500
-#: model:account.account.template,name:l10n_tw.tw_718500
-msgid "Cash difference gains"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_718600
-#: model:account.account,name:l10n_tw.2_tw_718600
-#: model:account.account.template,name:l10n_tw.tw_718600
-msgid "Cash difference losses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_613100
-#: model:account.account,name:l10n_tw.2_tw_613100
-#: model:account.account.template,name:l10n_tw.tw_613100
-msgid "Commissions expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_723200
-#: model:account.account,name:l10n_tw.2_tw_723200
-#: model:account.account.template,name:l10n_tw.tw_723200
-msgid "Commissions revenue"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_511100
-#: model:account.account,name:l10n_tw.2_tw_511100
-#: model:account.account.template,name:l10n_tw.tw_511100
-msgid "Cost of sales"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_156100
-#: model:account.account,name:l10n_tw.2_tw_156100
-#: model:account.account.template,name:l10n_tw.tw_156100
-msgid "Deferred tax assets"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612600
-#: model:account.account,name:l10n_tw.2_tw_612600
-#: model:account.account.template,name:l10n_tw.tw_612600
-msgid "Depletions and amortizations"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_516300
-#: model:account.account,name:l10n_tw.1_tw_612500
-#: model:account.account,name:l10n_tw.2_tw_516300
-#: model:account.account,name:l10n_tw.2_tw_612500
-#: model:account.account.template,name:l10n_tw.tw_516300
-#: model:account.account.template,name:l10n_tw.tw_612500
-msgid "Depreciations"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_514100
-#: model:account.account,name:l10n_tw.2_tw_514100
-#: model:account.account.template,name:l10n_tw.tw_514100
-msgid "Direct labor"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_714100
-#: model:account.account,name:l10n_tw.2_tw_714100
-#: model:account.account.template,name:l10n_tw.tw_714100
-msgid "Dividend revenue"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_220100
-#: model:account.account,name:l10n_tw.2_tw_220100
-#: model:account.account.template,name:l10n_tw.tw_220100
-msgid "Dividends payable"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612200
-#: model:account.account,name:l10n_tw.2_tw_612200
-#: model:account.account.template,name:l10n_tw.tw_612200
-msgid "Donation expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_121100
-#: model:account.account,name:l10n_tw.2_tw_121100
-#: model:account.account.template,name:l10n_tw.tw_121100
-msgid "Earned revenue receivable"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612900
-#: model:account.account,name:l10n_tw.2_tw_612900
-#: model:account.account.template,name:l10n_tw.tw_612900
-msgid "Employee benefits/welfare"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612100
-#: model:account.account,name:l10n_tw.2_tw_612100
-#: model:account.account.template,name:l10n_tw.tw_612100
-msgid "Entertainment expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_123500
-#: model:account.account,name:l10n_tw.2_tw_123500
-#: model:account.account.template,name:l10n_tw.tw_123500
-msgid "Finished goods"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_718100
-#: model:account.account,name:l10n_tw.2_tw_718100
-#: model:account.account.template,name:l10n_tw.tw_718100
-msgid "Foreign exchange gains"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_718200
-#: model:account.account,name:l10n_tw.2_tw_718200
-#: model:account.account.template,name:l10n_tw.tw_718200
-msgid "Foreign exchange losses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_611500
-#: model:account.account,name:l10n_tw.2_tw_611500
-#: model:account.account.template,name:l10n_tw.tw_611500
-msgid "Freight"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax.group,name:l10n_tw.tax_group_gst_5
-msgid "GST 5%"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,name:l10n_tw.1_tw_tax_purchase_inc_5
-#: model:account.tax,name:l10n_tw.2_tw_tax_purchase_inc_5
-#: model:account.tax.template,name:l10n_tw.tw_tax_purchase_inc_5
-msgid "GST Inc Purchase (5%)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,name:l10n_tw.1_tw_tax_sale_inc_5
-#: model:account.tax,name:l10n_tw.2_tw_tax_sale_inc_5
-#: model:account.tax.template,name:l10n_tw.tw_tax_sale_inc_5
-msgid "GST Inc Sale (5%)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,description:l10n_tw.1_tw_tax_purchase_inc_5
-#: model:account.tax,description:l10n_tw.2_tw_tax_purchase_inc_5
-#: model:account.tax.template,description:l10n_tw.tw_tax_purchase_inc_5
-msgid "GST Inclusive Purchases"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,description:l10n_tw.1_tw_tax_sale_inc_5
-#: model:account.tax,description:l10n_tw.2_tw_tax_sale_inc_5
-#: model:account.tax.template,description:l10n_tw.tw_tax_sale_inc_5
-msgid "GST Inclusive Sale"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,description:l10n_tw.1_tw_tax_purchase_5
-#: model:account.tax,description:l10n_tw.2_tw_tax_purchase_5
-#: model:account.tax.template,description:l10n_tw.tw_tax_purchase_5
-msgid "GST Purchase"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,description:l10n_tw.1_tw_tax_sale_5
-#: model:account.tax,description:l10n_tw.2_tw_tax_sale_5
-#: model:account.tax.template,description:l10n_tw.tw_tax_sale_5
-msgid "GST Sales"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_719100
-#: model:account.account,name:l10n_tw.2_tw_719100
-#: model:account.account.template,name:l10n_tw.tw_719100
-msgid "Gains on disposals of investment property"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_720200
-#: model:account.account,name:l10n_tw.2_tw_720200
-#: model:account.account.template,name:l10n_tw.tw_720200
-msgid "Gains on disposals of property, plant and equipment"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_158300
-#: model:account.account,name:l10n_tw.2_tw_158300
-#: model:account.account.template,name:l10n_tw.tw_158300
-msgid "Guarantee deposits paid"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_516800
-#: model:account.account,name:l10n_tw.2_tw_516800
-#: model:account.account.template,name:l10n_tw.tw_516800
-msgid "Indirect materials"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_516000
-#: model:account.account,name:l10n_tw.1_tw_612000
-#: model:account.account,name:l10n_tw.2_tw_516000
-#: model:account.account,name:l10n_tw.2_tw_612000
-#: model:account.account.template,name:l10n_tw.tw_516000
-#: model:account.account.template,name:l10n_tw.tw_612000
-msgid "Insurance expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_715100
-#: model:account.account,name:l10n_tw.2_tw_715100
-#: model:account.account.template,name:l10n_tw.tw_715100
-msgid "Interest expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_711100
-#: model:account.account,name:l10n_tw.2_tw_711100
-#: model:account.account.template,name:l10n_tw.tw_711100
-msgid "Interest revenue"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_717100
-#: model:account.account,name:l10n_tw.2_tw_717100
-#: model:account.account.template,name:l10n_tw.tw_717100
-msgid "Investment income accounted for using equity method"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_717200
-#: model:account.account,name:l10n_tw.2_tw_717200
-#: model:account.account.template,name:l10n_tw.tw_717200
-msgid "Investment loss accounted for using equity method"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_137100
-#: model:account.account,name:l10n_tw.2_tw_137100
-#: model:account.account.template,name:l10n_tw.tw_137100
-msgid "Investments accounted for using equity method"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_139100
-#: model:account.account,name:l10n_tw.2_tw_139100
-#: model:account.account.template,name:l10n_tw.tw_139100
-msgid "Land, cost"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_144100
-#: model:account.account,name:l10n_tw.2_tw_144100
-#: model:account.account.template,name:l10n_tw.tw_144100
-msgid "Leased assets, cost"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_l10n_tw_chart_template_liquidity_transfer
-#: model:account.account,name:l10n_tw.2_l10n_tw_chart_template_liquidity_transfer
-#: model:account.account.template,name:l10n_tw.l10n_tw_chart_template_liquidity_transfer
-msgid "Liquidity Transfer"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_719200
-#: model:account.account,name:l10n_tw.2_tw_719200
-#: model:account.account.template,name:l10n_tw.tw_719200
-msgid "Losses on disposals of investment property"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612400
-#: model:account.account,name:l10n_tw.2_tw_612400
-#: model:account.account.template,name:l10n_tw.tw_612400
-msgid "Losses on doubtful debts"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612700
-#: model:account.account,name:l10n_tw.2_tw_612700
-#: model:account.account.template,name:l10n_tw.tw_612700
-msgid "Losses on export sales"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_142100
-#: model:account.account,name:l10n_tw.2_tw_142100
-#: model:account.account.template,name:l10n_tw.tw_142100
-msgid "Machinery and equipment, cost"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_516500
-#: model:account.account,name:l10n_tw.1_tw_612800
-#: model:account.account,name:l10n_tw.2_tw_516500
-#: model:account.account,name:l10n_tw.2_tw_612800
-#: model:account.account.template,name:l10n_tw.tw_516500
-#: model:account.account.template,name:l10n_tw.tw_612800
-msgid "Meal expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_123100
-#: model:account.account,name:l10n_tw.2_tw_123100
-#: model:account.account.template,name:l10n_tw.tw_123100
-msgid "Merchandise inventory"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_720100
-#: model:account.account,name:l10n_tw.2_tw_720100
-#: model:account.account.template,name:l10n_tw.tw_720100
-msgid "Net gain or loss on disposals of property, plant and equipment"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_216100
-#: model:account.account,name:l10n_tw.2_tw_216100
-#: model:account.account.template,name:l10n_tw.tw_216100
-msgid "Notes payable"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_118100
-#: model:account.account,name:l10n_tw.2_tw_118100
-#: model:account.account.template,name:l10n_tw.tw_118100
-msgid "Notes receivable"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_143100
-#: model:account.account,name:l10n_tw.2_tw_143100
-#: model:account.account.template,name:l10n_tw.tw_143100
-msgid "Office equipment, cost"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_126400
-#: model:account.account,name:l10n_tw.2_tw_126400
-#: model:account.account.template,name:l10n_tw.tw_126400
-msgid "Office supplies"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_311100
-#: model:account.account,name:l10n_tw.2_tw_311100
-#: model:account.account.template,name:l10n_tw.tw_311100
-msgid "Ordinary share"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_219700
-#: model:account.account,name:l10n_tw.2_tw_219700
-#: model:account.account.template,name:l10n_tw.tw_219700
-msgid "Other accrued expenses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_222300
-#: model:account.account,name:l10n_tw.2_tw_222300
-#: model:account.account.template,name:l10n_tw.tw_222300
-msgid "Other advance receipts"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_341500
-#: model:account.account,name:l10n_tw.2_tw_341500
-#: model:account.account.template,name:l10n_tw.tw_341500
-msgid "Other equity interest, others"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_155100
-#: model:account.account,name:l10n_tw.2_tw_155100
-#: model:account.account.template,name:l10n_tw.tw_155100
-msgid "Other intangible assets, net"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_123150
-#: model:account.account,name:l10n_tw.2_tw_123150
-#: model:account.account.template,name:l10n_tw.tw_123150
-msgid "Other inventory (pending acceptance)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_158600
-#: model:account.account,name:l10n_tw.2_tw_158600
-#: model:account.account.template,name:l10n_tw.tw_158600
-msgid "Other non-current assets, others"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_591100
-#: model:account.account,name:l10n_tw.2_tw_591100
-#: model:account.account.template,name:l10n_tw.tw_591100
-msgid "Other operating costs"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_613400
-#: model:account.account,name:l10n_tw.2_tw_613400
-#: model:account.account.template,name:l10n_tw.tw_613400
-msgid "Other operating expenses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_414100
-#: model:account.account,name:l10n_tw.2_tw_414100
-#: model:account.account.template,name:l10n_tw.tw_414100
-msgid "Other operating revenue"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_516900
-#: model:account.account,name:l10n_tw.2_tw_516900
-#: model:account.account.template,name:l10n_tw.tw_516900
-msgid "Other overheads"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_126500
-#: model:account.account,name:l10n_tw.2_tw_126500
-#: model:account.account.template,name:l10n_tw.tw_126500
-msgid "Other prepaid expenses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_127000
-#: model:account.account,name:l10n_tw.2_tw_127000
-#: model:account.account.template,name:l10n_tw.tw_127000
-msgid "Other prepayments"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_724700
-#: model:account.account,name:l10n_tw.2_tw_724700
-#: model:account.account.template,name:l10n_tw.tw_724700
-msgid "Other revenue"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_126900
-#: model:account.account,name:l10n_tw.2_tw_126900
-#: model:account.account.template,name:l10n_tw.tw_126900
-msgid "Overpaid sales tax"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_239300
-#: model:account.account,name:l10n_tw.2_tw_239300
-#: model:account.account.template,name:l10n_tw.tw_239300
-msgid "Owner (shareholder) accounts, credit"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_158400
-#: model:account.account,name:l10n_tw.2_tw_158400
-#: model:account.account.template,name:l10n_tw.tw_158400
-msgid "Owner (shareholder) accounts, debit"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_515800
-#: model:account.account,name:l10n_tw.2_tw_515800
-#: model:account.account.template,name:l10n_tw.tw_515800
-msgid "Packing expenses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_219900
-#: model:account.account,name:l10n_tw.2_tw_219900
-#: model:account.account.template,name:l10n_tw.tw_219900
-msgid "Payable on machinery and equipment"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_128200
-#: model:account.account,name:l10n_tw.2_tw_128200
-#: model:account.account.template,name:l10n_tw.tw_128200
-msgid "Payment on behalf of others"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_611600
-#: model:account.account,name:l10n_tw.2_tw_611600
-#: model:account.account.template,name:l10n_tw.tw_611600
-msgid "Postage expenses"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_126600
-#: model:account.account,name:l10n_tw.2_tw_126600
-#: model:account.account.template,name:l10n_tw.tw_126600
-msgid "Prepayment for purchases"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_158200
-#: model:account.account,name:l10n_tw.2_tw_158200
-#: model:account.account.template,name:l10n_tw.tw_158200
-msgid "Prepayments for business facilities"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_516100
-#: model:account.account,name:l10n_tw.2_tw_516100
-#: model:account.account.template,name:l10n_tw.tw_516100
-msgid "Processing expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_217150
-#: model:account.account,name:l10n_tw.2_tw_217150
-#: model:account.account.template,name:l10n_tw.tw_217150
-msgid "Provisional estimate payable"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,name:l10n_tw.1_tw_tax_purchase_5
-#: model:account.tax,name:l10n_tw.2_tw_tax_purchase_5
-#: model:account.tax.template,name:l10n_tw.tw_tax_purchase_5
-msgid "Purchase (5%)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_512100
-#: model:account.account,name:l10n_tw.2_tw_512100
-#: model:account.account.template,name:l10n_tw.tw_512100
-msgid "Purchase of goods"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_513100
-#: model:account.account,name:l10n_tw.2_tw_513100
-#: model:account.account.template,name:l10n_tw.tw_513100
-msgid "Purchase of raw materials"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_512400
-#: model:account.account,name:l10n_tw.2_tw_512400
-#: model:account.account.template,name:l10n_tw.tw_512400
-msgid "Purchases discounts and allowances"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_512300
-#: model:account.account,name:l10n_tw.2_tw_512300
-#: model:account.account.template,name:l10n_tw.tw_512300
-msgid "Purchases returns"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_123900
-#: model:account.account,name:l10n_tw.2_tw_123900
-#: model:account.account.template,name:l10n_tw.tw_123900
-msgid "Raw materials"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_513400
-#: model:account.account,name:l10n_tw.2_tw_513400
-#: model:account.account.template,name:l10n_tw.tw_513400
-msgid "Raw materials purchase discounts and allowances"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_513300
-#: model:account.account,name:l10n_tw.2_tw_513300
-#: model:account.account.template,name:l10n_tw.tw_513300
-msgid "Raw materials purchase returns"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_225200
-#: model:account.account,name:l10n_tw.2_tw_225200
-#: model:account.account.template,name:l10n_tw.tw_225200
-msgid "Receipts under custody"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_128400
-#: model:account.account,name:l10n_tw.2_tw_128400
-#: model:account.account.template,name:l10n_tw.tw_128400
-msgid "Refundable deposits"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_515200
-#: model:account.account,name:l10n_tw.1_tw_611200
-#: model:account.account,name:l10n_tw.2_tw_515200
-#: model:account.account,name:l10n_tw.2_tw_611200
-#: model:account.account.template,name:l10n_tw.tw_515200
-#: model:account.account.template,name:l10n_tw.tw_611200
-msgid "Rent expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_712100
-#: model:account.account,name:l10n_tw.2_tw_712100
-#: model:account.account.template,name:l10n_tw.tw_712100
-msgid "Rent income"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_515700
-#: model:account.account,name:l10n_tw.1_tw_611700
-#: model:account.account,name:l10n_tw.2_tw_515700
-#: model:account.account,name:l10n_tw.2_tw_611700
-#: model:account.account.template,name:l10n_tw.tw_515700
-#: model:account.account.template,name:l10n_tw.tw_611700
-msgid "Repairs and maintenance expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_613000
-#: model:account.account,name:l10n_tw.2_tw_613000
-#: model:account.account.template,name:l10n_tw.tw_613000
-msgid "Research and development expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.tax,name:l10n_tw.1_tw_tax_sale_5
-#: model:account.tax,name:l10n_tw.2_tw_tax_sale_5
-#: model:account.tax.template,name:l10n_tw.tw_tax_sale_5
-msgid "Sale (5%)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_411400
-#: model:account.account,name:l10n_tw.2_tw_411400
-#: model:account.account.template,name:l10n_tw.tw_411400
-msgid "Sales discounts and allowances"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_411300
-#: model:account.account,name:l10n_tw.2_tw_411300
-#: model:account.account.template,name:l10n_tw.tw_411300
-msgid "Sales returns"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_411100
-#: model:account.account,name:l10n_tw.2_tw_411100
-#: model:account.account.template,name:l10n_tw.tw_411100
-msgid "Sales revenue"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_613300
-#: model:account.account,name:l10n_tw.2_tw_613300
-#: model:account.account.template,name:l10n_tw.tw_613300
-msgid "Services expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_611300
-#: model:account.account,name:l10n_tw.2_tw_611300
-#: model:account.account.template,name:l10n_tw.tw_611300
-msgid "Stationery supplies"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_124000
-#: model:account.account,name:l10n_tw.2_tw_124000
-#: model:account.account.template,name:l10n_tw.tw_124000
-msgid "Supplies"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.chart.template,name:l10n_tw.l10n_tw_chart_template
-msgid "Taiwan Tax and Account Chart Template"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_821100
-#: model:account.account,name:l10n_tw.2_tw_821100
-#: model:account.account.template,name:l10n_tw.tw_821100
-msgid "Tax expense (income)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_612300
-#: model:account.account,name:l10n_tw.2_tw_612300
-#: model:account.account.template,name:l10n_tw.tw_612300
-msgid "Taxes"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_225100
-#: model:account.account,name:l10n_tw.2_tw_225100
-#: model:account.account.template,name:l10n_tw.tw_225100
-msgid "Temporary credits"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_128100
-#: model:account.account,name:l10n_tw.2_tw_128100
-#: model:account.account.template,name:l10n_tw.tw_128100
-msgid "Temporary payments"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_613200
-#: model:account.account,name:l10n_tw.2_tw_613200
-#: model:account.account.template,name:l10n_tw.tw_613200
-msgid "Training expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_611400
-#: model:account.account,name:l10n_tw.2_tw_611400
-#: model:account.account.template,name:l10n_tw.tw_611400
-msgid "Traveling Expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_515900
-#: model:account.account,name:l10n_tw.1_tw_611900
-#: model:account.account,name:l10n_tw.2_tw_515900
-#: model:account.account,name:l10n_tw.2_tw_611900
-#: model:account.account.template,name:l10n_tw.tw_515900
-#: model:account.account.template,name:l10n_tw.tw_611900
-msgid "Utilities expense"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_611100
-#: model:account.account,name:l10n_tw.2_tw_611100
-#: model:account.account.template,name:l10n_tw.tw_611100
-msgid "Wages and salaries"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_123700
-#: model:account.account,name:l10n_tw.2_tw_123700
-#: model:account.account.template,name:l10n_tw.tw_123700
-msgid "Work in progress"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_412100
-#: model:account.account,name:l10n_tw.2_tw_412100
-#: model:account.account.template,name:l10n_tw.tw_412100
-msgid "Labor Income"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_413100
-#: model:account.account,name:l10n_tw.2_tw_413100
-#: model:account.account.template,name:l10n_tw.tw_413100
-msgid "Engineering Income"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_423200
-#: model:account.account,name:l10n_tw.2_tw_423200
-#: model:account.account.template,name:l10n_tw.tw_423200
-msgid "Engineering Income refund or discount"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_841100
-#: model:account.account,name:l10n_tw.2_tw_841100
-#: model:account.account.template,name:l10n_tw.tw_841100
-msgid "Closed Units' asset or profit (post tax)"
-msgstr ""
-
-#. module: l10n_tw
-#: model:account.account,name:l10n_tw.1_tw_871100
-#: model:account.account,name:l10n_tw.2_tw_871100
-#: model:account.account.template,name:l10n_tw.tw_871100
-msgid "Unrealized gains and losses on available-for-sale financial assets"
+#: model:account.report.column,name:l10n_tw.l10n_tw_tax_report_401_tax
+#: model:account.report.column,name:l10n_tw.l10n_tw_tax_report_403_tax
+#: model:account.report.column,name:l10n_tw.l10n_tw_tax_report_404_tax
+msgid "Tax"
 msgstr ""
 
 #. module: l10n_tw
@@ -1273,11 +412,6 @@ msgid "南投市"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_ntc
-msgid "南投縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_819
 msgid "南沙群島"
 msgstr ""
@@ -1308,28 +442,8 @@ msgid "古坑鄉"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_tcc
-msgid "台中市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_tpc
-msgid "台北市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_tnh
-msgid "台南市"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_950
 msgid "台東市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_tth
-msgid "台東縣"
 msgstr ""
 
 #. module: l10n_tw
@@ -1378,16 +492,6 @@ msgid "善化區"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_cic
-msgid "嘉義市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_cih
-msgid "嘉義縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_654
 msgid "四湖鄉"
 msgstr ""
@@ -1430,11 +534,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_523
 msgid "埤頭鄉"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_klc
-msgid "基隆市"
 msgstr ""
 
 #. module: l10n_tw
@@ -1609,11 +708,6 @@ msgid "宜蘭市"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_ilh
-msgid "宜蘭縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_983
 msgid "富里鄉"
 msgstr ""
@@ -1641,11 +735,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_900
 msgid "屏東市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_pth
-msgid "屏東縣"
 msgstr ""
 
 #. module: l10n_tw
@@ -1714,11 +803,6 @@ msgid "彰化市"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_chh
-msgid "彰化縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_731
 msgid "後壁區"
 msgstr ""
@@ -1761,11 +845,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_712
 msgid "新化區"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_ntpc
-msgid "新北市"
 msgstr ""
 
 #. module: l10n_tw
@@ -1816,16 +895,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_426
 msgid "新社區"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_hct
-msgid "新竹市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_hch
-msgid "新竹縣"
 msgstr ""
 
 #. module: l10n_tw
@@ -1974,11 +1043,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_330
 msgid "桃園區"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_tyc
-msgid "桃園市"
 msgstr ""
 
 #. module: l10n_tw
@@ -2169,11 +1233,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_920
 msgid "潮州鎮"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_phc
-msgid "澎湖縣"
 msgstr ""
 
 #. module: l10n_tw
@@ -2407,11 +1466,6 @@ msgid "花蓮市"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_hlh
-msgid "花蓮縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_528
 msgid "芳苑鄉"
 msgstr ""
@@ -2429,11 +1483,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_360
 msgid "苗栗市"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_mlh
-msgid "苗栗縣"
 msgstr ""
 
 #. module: l10n_tw
@@ -2588,11 +1637,6 @@ msgid "造橋鄉"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_lcc
-msgid "連江縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_966
 msgid "達仁鄉"
 msgstr ""
@@ -2635,11 +1679,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_891
 msgid "金湖鎮"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_kmc
-msgid "金門縣"
 msgstr ""
 
 #. module: l10n_tw
@@ -2698,11 +1737,6 @@ msgid "雙溪區"
 msgstr ""
 
 #. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_ylh
-msgid "雲林縣"
-msgstr ""
-
-#. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_902
 msgid "霧台鄉"
 msgstr ""
@@ -2740,11 +1774,6 @@ msgstr ""
 #. module: l10n_tw
 #: model:res.city,name:l10n_tw.city_tw_906
 msgid "高樹鄉"
-msgstr ""
-
-#. module: l10n_tw
-#: model:res.country.state,name:l10n_tw.state_tw_khc
-msgid "高雄市"
 msgstr ""
 
 #. module: l10n_tw

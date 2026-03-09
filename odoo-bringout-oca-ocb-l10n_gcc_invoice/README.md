@@ -1,7 +1,7 @@
-# G.C.C. - Arabic/English Invoice
+# Gulf Cooperation Council - Invoice
 
 
-    Arabic/English for GCC
+Adds Arabic as a secondary language on your invoice, credit note, debit note, vendor bill, and refund bill
 
 
 ## Installation
@@ -12,35 +12,14 @@ pip install odoo-bringout-oca-ocb-l10n_gcc_invoice
 
 ## Dependencies
 
-This addon depends on:
 - account
-
-## Manifest Information
-
-- **Name**: G.C.C. - Arabic/English Invoice
-- **Version**: 1.0.0
-- **Category**: Accounting/Localizations
-- **License**: LGPL-3
-- **Installable**: False
 
 ## Source
 
-Based on [OCA/OCB](https://github.com/OCA/OCB) branch 16.0, addon `l10n_gcc_invoice`.
+- Repository: https://github.com/OCA/OCB
+- Branch: 19.0
+- Path: addons/l10n_gcc_invoice
 
 ## License
 
-This package maintains the original LGPL-3 license from the upstream Odoo project.
-
-## Documentation
-
-- Overview: doc/OVERVIEW.md
-- Architecture: doc/ARCHITECTURE.md
-- Models: doc/MODELS.md
-- Controllers: doc/CONTROLLERS.md
-- Wizards: doc/WIZARDS.md
-- Install: doc/INSTALL.md
-- Usage: doc/USAGE.md
-- Configuration: doc/CONFIGURATION.md
-- Dependencies: doc/DEPENDENCIES.md
-- Troubleshooting: doc/TROUBLESHOOTING.md
-- FAQ: doc/FAQ.md
+This package preserves the original LGPL-3 license.

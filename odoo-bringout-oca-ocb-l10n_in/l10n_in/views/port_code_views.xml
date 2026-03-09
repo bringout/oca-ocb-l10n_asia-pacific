@@ -20,14 +20,14 @@
     </record>
 
     <record id="l10n_in_port_code_tree_view" model="ir.ui.view">
-        <field name="name">l10n_in.port.code.tree</field>
+        <field name="name">l10n_in.port.code.list</field>
         <field name="model">l10n_in.port.code</field>
         <field name="arch" type="xml">
-            <tree string="India Port Code">
+            <list string="India Port Code">
                 <field name="name"/>
                 <field name="code"/>
                 <field name="state_id"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -38,7 +38,7 @@
             <search string="India Port Code">
                 <field name="name" string="Port" filter_domain="['|',('name', 'ilike', self),('code', 'ilike', self)]"/>
                 <field name="state_id"/>
-                <group expand="0" string="Group By">
+                <group>
                     <filter string="State" name="state" domain="[]" context="{'group_by': 'state_id'}"/>
                 </group>
             </search>

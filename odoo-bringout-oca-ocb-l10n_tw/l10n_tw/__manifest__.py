@@ -1,33 +1,31 @@
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
-    "name": "Taiwan - Accounting",
-    "author": "Odoo PS",
-    "version": "1.0",
-    "category": "Accounting/Localizations/Account Charts",
-    "description": """
+    'name': 'Taiwan - Accounting',
+    'website': 'https://www.odoo.com/documentation/latest/applications/finance/fiscal_localizations.html',
+    'icon': '/account/static/description/l10n.png',
+    'countries': ['tw'],
+    'author': 'Odoo PS',
+    'version': '1.0',
+    'category': 'Accounting/Localizations/Account Charts',
+    'description': """
 This is the base module to manage the accounting chart for Taiwan in Odoo.
 ==============================================================================
     """,
-    "depends": [
-        "account",
-        "base_address_extended",
-        "l10n_multilang",
+    'depends': [
+        'account',
+        'base_address_extended',
     ],
-    "data": [
-        "data/l10n_tw_chart_data.xml",
-        "data/account.account.template.csv",
-        "data/res.country.state.csv",
-        "data/account_chart_template_data.xml",
-        "data/account.tax.group.csv",
-        "data/account_tax_template_data.xml",
-        "data/account_chart_template_configure_data.xml",
-        "data/res_currency_data.xml",
-        "data/res_country_data.xml",
-        "data/res.city.csv",
+    'auto_install': ['account'],
+    'data': [
+        'data/res_currency_data.xml',
+        'data/res_country_data.xml',
+        'data/res.city.csv',
+        'data/tax_report_401.xml',
+        'data/tax_report_403.xml',
+        'data/tax_report_404.xml',
     ],
     'demo': [
         'demo/demo_company.xml',
     ],
-    "icon": "/base/static/img/country_flags/tw.png",
-    "post_init_hook": "load_translations",
-    "license": "LGPL-3",
+    'license': 'LGPL-3',
 }

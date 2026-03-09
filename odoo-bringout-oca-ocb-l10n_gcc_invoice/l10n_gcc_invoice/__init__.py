@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 from . import models
-from . import tests
+
+
+def _l10n_gcc_invoice_post_init(env):
+    env['res.lang']._activate_and_install_lang('ar_001')
