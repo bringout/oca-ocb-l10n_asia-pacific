@@ -1,7 +1,5 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-import io
 import xlrd
-import base64
 
 from odoo import Command
 from odoo.tests import tagged
@@ -53,19 +51,17 @@ class TestBIR2307Generation(TestPhCommon):
             'city': "Manila",
             'country_id': cls.env.ref('base.ph').id,
             'zip': "+900–1-096",
-            'is_company': True,
         })
 
-        cls.other_currency = cls.setup_other_currency('EUR', rates=[('2017-01-01', 2)])
+        cls.other_currency = cls.setup_other_currency('EUR', rates=[('2016-12-31', 2)])
 
     def test_bir_2307_company(self):
         """ Test the report """
+        self.partner_a.first_name = self.partner_a.middle_name = self.partner_a.last_name = ''
         wizard_action = self.invoice.action_open_l10n_ph_2307_wizard()
         context = wizard_action['context']
         wizard = self.env['l10n_ph_2307.wizard'].with_context(context).create({})
         wizard.action_generate()
-
-        bir_2307 = base64.b64decode(wizard.xls_file)
 
         # 2: Build the expected values
         expected_values = {
@@ -75,8 +71,8 @@ class TestBIR2307Generation(TestPhCommon):
             1: ['01/15/2020', '123456789', '001', 'JMC Company', '', '', '', '250 Amorsolo Street, Manila, Philippines', '+900–1-096', 'Commission/rebates/discounts', 'WC516', 100.0, 10.0, 10.0],
         }
 
-        report_file = io.BytesIO(bir_2307)
-        xls = xlrd.open_workbook(file_contents=report_file.read())
+        content = wizard.xls_file.content
+        xls = xlrd.open_workbook(file_contents=content)
         sheet = xls.sheet_by_index(0)
         for row, values in expected_values.items():
             row_values = sheet.row_values(row)
@@ -94,8 +90,8 @@ class TestBIR2307Generation(TestPhCommon):
         bill.action_post()
         wizard = self.env['l10n_ph_2307.wizard'].with_context(default_moves_to_export=bill.ids).create({})
         wizard.action_generate()
-        report_file = io.BytesIO(base64.b64decode(wizard.xls_file))
-        xl = xlrd.open_workbook(file_contents=report_file.read())
+        content = wizard.xls_file.content
+        xl = xlrd.open_workbook(file_contents=content)
         sheet = xl.sheet_by_index(0)
 
         result = []
@@ -116,8 +112,8 @@ class TestBIR2307Generation(TestPhCommon):
         bill.action_post()
         wizard = self.env['l10n_ph_2307.wizard'].with_context(default_moves_to_export=bill.ids).create({})
         wizard.action_generate()
-        report_file = io.BytesIO(base64.b64decode(wizard.xls_file))
-        xl = xlrd.open_workbook(file_contents=report_file.read())
+        content = wizard.xls_file.content
+        xl = xlrd.open_workbook(file_contents=content)
         sheet = xl.sheet_by_index(0)
 
         result = []
@@ -142,8 +138,8 @@ class TestBIR2307Generation(TestPhCommon):
         bill.action_post()
         wizard = self.env['l10n_ph_2307.wizard'].with_context(default_moves_to_export=bill.ids).create({})
         wizard.action_generate()
-        report_file = io.BytesIO(base64.b64decode(wizard.xls_file))
-        xl = xlrd.open_workbook(file_contents=report_file.read())
+        content = wizard.xls_file.content
+        xl = xlrd.open_workbook(file_contents=content)
         sheet = xl.sheet_by_index(0)
 
         result = []
@@ -155,6 +151,7 @@ class TestBIR2307Generation(TestPhCommon):
 
     def test_04_multi_currency(self):
         """ Ensure that generating the file on a document of another currency than the company's gives the correct result. """
+        self.partner_a.first_name = self.partner_a.middle_name = self.partner_a.last_name = ''
         tax = self._create_tax('10% ATC', -10, l10n_ph_atc='WI010')
         bill = self.init_invoice(
             move_type='in_invoice',
@@ -167,8 +164,8 @@ class TestBIR2307Generation(TestPhCommon):
         bill.action_post()
         wizard = self.env['l10n_ph_2307.wizard'].with_context(default_moves_to_export=bill.ids).create({})
         wizard.action_generate()
-        report_file = io.BytesIO(base64.b64decode(wizard.xls_file))
-        xl = xlrd.open_workbook(file_contents=report_file.read())
+        content = wizard.xls_file.content
+        xl = xlrd.open_workbook(file_contents=content)
         sheet = xl.sheet_by_index(0)
 
         result = []

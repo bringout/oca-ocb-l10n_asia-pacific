@@ -40,6 +40,8 @@ Sheet, now only Vertical format has been permitted Which is Supported By Odoo.
         'data/account_cash_rounding.xml',
         'data/account_tax_report_tcs_data.xml',
         'data/account_tax_report_tds_data.xml',
+        'data/account_tax_report_tcs_it_act_25_data.xml',
+        'data/account_tax_report_tds_it_act_25_data.xml',
         'data/l10n_in.section.alert.csv',
         'wizard/l10n_in_withhold_wizard.xml',
         'views/l10n_in_pan_entity_views.xml',
@@ -58,6 +60,7 @@ Sheet, now only Vertical format has been permitted Which is Supported By Odoo.
         'views/res_partner_views.xml',
         'views/account_tax_views.xml',
         'views/uom_uom_views.xml',
+        'views/base_document_layout_views.xml',
     ],
     'demo': [
         'demo/product_demo.xml',
@@ -66,6 +69,7 @@ Sheet, now only Vertical format has been permitted Which is Supported By Odoo.
     'post_init_hook': 'post_init',
     'author': 'Odoo S.A.',
     'license': 'LGPL-3',
+    'iap_paid_service': True,
     'assets': {
         'web.assets_backend': [
             'l10n_in/static/src/components/**/*',
