@@ -29,6 +29,39 @@ class AccountMove(models.Model):
                 and i.state in ("sent", "to_cancel", "cancelled")
             ))
 
+    def _compute_edi_error_count(self):
+        super()._compute_edi_error_count()
+        for move in self:
+            if (
+                move.country_code == "IN"
+                and move.edi_document_ids
+                and all(d.state in ("to_send", "sent") and not d.blocking_level for d in move.edi_document_ids)
+                and self.env["ir.config_parameter"].sudo().get_param("l10n_in.gsp_provider", "tera") == "tera"
+            ):
+                move.edi_error_count = 1
+
+    def _compute_edi_error_message(self):
+        super()._compute_edi_error_message()
+        for move in self:
+            if (
+                move.country_code == "IN"
+                and move.edi_document_ids
+                and all(d.state in ("to_send", "sent") and not d.blocking_level for d in move.edi_document_ids)
+                and self.env["ir.config_parameter"].sudo().get_param("l10n_in.gsp_provider", "tera") == "tera"
+            ):
+                edi_error_message = _(
+                    "<b><span class='fa fa-warning'/> Important Notice – GSP Deprecation <br></b>"
+                    "The currently selected GSP (Tera Soft) will be deprecated soon.<br>"
+                    "To ensure uninterrupted e-Invoice and E-way operations, <b>please switch to BVM GSP as per the </b>"
+                    "<a href='https://www.odoo.com/documentation/18.0/applications/finance/fiscal_localizations/india.html#gsp-configuration'>documentation</a>."
+                )
+                if not self.env.is_admin():
+                    edi_error_message += _(
+                        "<br><br><i>You must contact your system administrator to update the GSP.</i>"
+                    )
+                move.edi_error_message = edi_error_message
+                move.edi_blocking_level = 'warning'
+
     def action_retry_edi_documents_error(self):
         for move in self:
             if move.country_code == 'IN':
@@ -68,12 +101,7 @@ class AccountMove(models.Model):
         else:
             return {}
 
-    @api.model
-    def _l10n_in_edi_is_managing_invoice_negative_lines_allowed(self):
-        """ Negative lines are not allowed by the Indian government making some features unavailable like sale_coupon
-        or global discounts. This method allows odoo to distribute the negative discount lines to each others lines
-        with same HSN code making such features available even for Indian people.
-        :return: True if odoo needs to distribute the negative discount lines, False otherwise.
-        """
-        param_name = 'l10n_in_edi.manage_invoice_negative_lines'
-        return bool(self.env['ir.config_parameter'].sudo().get_param(param_name))
+    def _can_force_cancel(self):
+        # OVERRIDE
+        self.ensure_one()
+        return any(document.edi_format_id.code == 'in_einvoice_1_03' and document.state == 'to_cancel' for document in self.edi_document_ids) or super()._can_force_cancel()

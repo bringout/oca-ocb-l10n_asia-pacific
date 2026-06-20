@@ -18,7 +18,9 @@ State Data/省份数据
 
     修改小企业会计税率
 
-We added the option to print a voucher which will also 
+    增加大企业会计科目表
+
+We added the option to print a voucher which will also
 print the amount in words (special Chinese characters for numbers)
 correctly when the cn2an library is installed. (e.g. with pip3 install cn2an)
     
@@ -31,37 +33,15 @@ pip install odoo-bringout-oca-ocb-l10n_cn
 
 ## Dependencies
 
-This addon depends on:
 - base
 - account
-- l10n_multilang
-
-## Manifest Information
-
-- **Name**: China - Accounting
-- **Version**: 1.9
-- **Category**: Accounting/Localizations/Account Charts
-- **License**: LGPL-3
-- **Installable**: False
 
 ## Source
 
-Based on [OCA/OCB](https://github.com/OCA/OCB) branch 16.0, addon `l10n_cn`.
+- Repository: https://github.com/OCA/OCB
+- Branch: 18.0
+- Path: addons/l10n_cn
 
 ## License
 
-This package maintains the original LGPL-3 license from the upstream Odoo project.
-
-## Documentation
-
-- Overview: doc/OVERVIEW.md
-- Architecture: doc/ARCHITECTURE.md
-- Models: doc/MODELS.md
-- Controllers: doc/CONTROLLERS.md
-- Wizards: doc/WIZARDS.md
-- Install: doc/INSTALL.md
-- Usage: doc/USAGE.md
-- Configuration: doc/CONFIGURATION.md
-- Dependencies: doc/DEPENDENCIES.md
-- Troubleshooting: doc/TROUBLESHOOTING.md
-- FAQ: doc/FAQ.md
+This package preserves the original LGPL-3 license.
