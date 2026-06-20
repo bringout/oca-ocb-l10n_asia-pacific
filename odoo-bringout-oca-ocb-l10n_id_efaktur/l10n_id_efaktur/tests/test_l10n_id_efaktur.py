@@ -12,7 +12,7 @@ from unittest.mock import patch
 class TestIndonesianEfaktur(AccountTestInvoicingCommon):
 
     @classmethod
-    def setUpClass(cls, chart_template_ref='l10n_id.l10n_id_chart'):
+    def setUpClass(cls, chart_template_ref='id'):
         super().setUpClass(chart_template_ref=chart_template_ref)
         """
         1) contact with l10n_id_pkp=True, l10n_id_kode_transaksi="01"

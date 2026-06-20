@@ -36,7 +36,7 @@ class AccountMove(models.Model):
             ('08', '08 Deliveries that the VAT is Exempted'),
             ('09', '09 Deliveries of Assets (Article 16D of VAT Law)'),
         ], string='Kode Transaksi', help='Dua digit pertama nomor pajak',
-        readonly=False, states={'posted': [('readonly', True)], 'cancel': [('readonly', True)]}, copy=False,
+        readonly=False, copy=False,
         compute="_compute_kode_transaksi", store=True)
     l10n_id_need_kode_transaksi = fields.Boolean(compute='_compute_need_kode_transaksi')
 
@@ -67,17 +67,6 @@ class AccountMove(models.Model):
                 and move.country_code == 'ID'
                 and move.line_ids.tax_ids
             )
-
-    @api.constrains('l10n_id_kode_transaksi', 'line_ids', 'partner_id')
-    def _constraint_kode_ppn(self):
-        ppn_tag = self.env.ref('l10n_id.ppn_tag')
-        for move in self.filtered(lambda m: m.l10n_id_need_kode_transaksi and m.l10n_id_kode_transaksi != '08'):
-            if any(ppn_tag.id in line.tax_tag_ids.ids for line in move.line_ids if line.display_type == 'product') \
-                    and any(ppn_tag.id not in line.tax_tag_ids.ids for line in move.line_ids if line.display_type == 'product'):
-                raise UserError(_('Cannot mix VAT subject and Non-VAT subject items in the same invoice with this kode transaksi.'))
-        for move in self.filtered(lambda m: m.l10n_id_need_kode_transaksi and m.l10n_id_kode_transaksi == '08'):
-            if any(ppn_tag.id in line.tax_tag_ids.ids for line in move.line_ids if line.display_type == 'product'):
-                raise UserError('Kode transaksi 08 is only for non VAT subject items.')
 
     @api.constrains('l10n_id_tax_number')
     def _constrains_l10n_id_tax_number(self):

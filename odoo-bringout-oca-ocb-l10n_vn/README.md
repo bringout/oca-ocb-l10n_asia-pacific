@@ -1,15 +1,20 @@
 # Vietnam - Accounting
 
 
-This is the module to manage the accounting chart for Vietnam in Odoo.
-=========================================================================
+This is the module to manage the accounting chart, bank information for Vietnam in Odoo.
+========================================================================================
 
-This module applies to companies based in Vietnamese Accounting Standard (VAS)
-with Chart of account under Circular No. 200/2014/TT-BTC
+- This module applies to companies based in Vietnamese Accounting Standard (VAS)
+  with Chart of account under Circular No. 200/2014/TT-BTC
+- Add Vietnamese bank information (like name, bic ..) as announced and yearly updated by State Bank
+  of Viet Nam (https://sbv.gov.vn/webcenter/portal/en/home/sbv/paytreasury/bankidno).
+- Add VietQR feature for invoice
 
 **Credits:**
     - General Solutions.
     - Trobz
+    - Jean Nguyen - The Bean Family (https://github.com/anhjean/vietqr) for VietQR.
+
 
 
 ## Installation
@@ -20,39 +25,15 @@ pip install odoo-bringout-oca-ocb-l10n_vn
 
 ## Dependencies
 
-This addon depends on:
-- account
+- account_qr_code_emv
 - base_iban
-- l10n_multilang
-
-## Manifest Information
-
-- **Name**: Vietnam - Accounting
-- **Version**: 2.0.1
-- **Category**: Accounting/Localizations/Account Charts
-- **License**: LGPL-3
-- **Installable**: False
 
 ## Source
 
-Based on [OCA/OCB](https://github.com/OCA/OCB) branch 16.0, addon `l10n_vn`.
+- Repository: https://github.com/OCA/OCB
+- Branch: 17.0
+- Path: addons/l10n_vn
 
 ## License
 
-This package maintains the original LGPL-3 license from the upstream Odoo project.
-
-## Documentation
-
-- Overview: doc/OVERVIEW.md
-- Architecture: doc/ARCHITECTURE.md
-- Models: doc/MODELS.md
-- Controllers: doc/CONTROLLERS.md
-- Wizards: doc/WIZARDS.md
-- Reports: doc/REPORTS.md
-- Security: doc/SECURITY.md
-- Install: doc/INSTALL.md
-- Usage: doc/USAGE.md
-- Configuration: doc/CONFIGURATION.md
-- Dependencies: doc/DEPENDENCIES.md
-- Troubleshooting: doc/TROUBLESHOOTING.md
-- FAQ: doc/FAQ.md
+This package preserves the original LGPL-3 license.
